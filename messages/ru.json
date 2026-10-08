@@ -1,0 +1,55 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "nav_settings": "Настройки",
+  "nav_files": "Файлы",
+  "storage_used": "Использовано {used} из {total}",
+  "api_hint": "Создайте API-ключ, чтобы подключить другие приложения. Подробнее в {#link to=|/docs/api|}документации{/link}.",
+  "welcome_back": "{#b}{name}{/b}, с возвращением!",
+  "files_remaining": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural"
+      ],
+      "selectors": [
+        "countPlural"
+      ],
+      "match": {
+        "countPlural=one": "Остался {count} файл",
+        "countPlural=few": "Осталось {count} файла",
+        "countPlural=*": "Осталось {count} файла"
+      }
+    }
+  ],
+  "file_sent_activity": [
+    {
+      "declarations": [
+        "input actorName",
+        "input actorGender",
+        "input count",
+        "local countPlural = count: plural"
+      ],
+      "selectors": [
+        "actorGender",
+        "countPlural"
+      ],
+      "match": {
+        "actorGender=female, countPlural=one": "{actorName} отправила вам {count} файл",
+        "actorGender=female, countPlural=few": "{actorName} отправила вам {count} файла",
+        "actorGender=female, countPlural=many": "{actorName} отправила вам {count} файлов",
+        "actorGender=female, countPlural=*": "{actorName} отправила вам {count} файла",
+        "actorGender=male, countPlural=one": "{actorName} отправил вам {count} файл",
+        "actorGender=male, countPlural=few": "{actorName} отправил вам {count} файла",
+        "actorGender=male, countPlural=*": "{actorName} отправил вам {count} файла",
+        "actorGender=*, countPlural=one": "{actorName} отправил(а) вам {count} файл",
+        "actorGender=*, countPlural=few": "{actorName} отправил(а) вам {count} файла",
+        "actorGender=*, countPlural=many": "{actorName} отправил(а) вам {count} файлов",
+        "actorGender=*, countPlural=*": "{actorName} отправил(а) вам {count} файла"
+      }
+    }
+  ],
+  "files_selected": "{count} файлов выбрано",
+  "legacy_banner": "Добро пожаловать в старый Acme Files",
+  "save": "Сохранить",
+  "cancel": "Отмена"
+}

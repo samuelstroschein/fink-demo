@@ -1,0 +1,27 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "nav_settings": "Paramètres",
+  "nav_files": "Fichiers",
+  "upload_hint": "Déposez des fichiers ici ou parcourez",
+  "storage_used": "{used} sur {totl} utilisés",
+  "api_hint": "Créez une clé API pour connecter d'autres applications. En savoir plus dans la {#link to=|/docs/api|}documentation{/link}.",
+  "welcome_back": "{name}, bon retour !",
+  "files_remaining": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural"
+      ],
+      "selectors": [
+        "countPlural"
+      ],
+      "match": {
+        "countPlural=one": "{count} fichier restant",
+        "countPlural=many": "{count} de fichiers restants",
+        "countPlural=*": "{count} fichiers restants"
+      }
+    }
+  ],
+  "save": "Enregistrer",
+  "cancel": "Annuler"
+}

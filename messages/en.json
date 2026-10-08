@@ -1,0 +1,78 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "nav_settings": "Settings",
+  "nav_files": "Files",
+  "upload_hint": "Drop files here or browse",
+  "storage_used": "{used} of {total} used",
+  "api_hint": "Create an API key to connect other apps. Learn more in the {#link to=|/docs/api|}docs{/link}.",
+  "welcome_back": "{#b}{name}{/b}, welcome back!",
+  "files_remaining": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural"
+      ],
+      "selectors": [
+        "countPlural"
+      ],
+      "match": {
+        "countPlural=one": "{count} file left",
+        "countPlural=*": "{count} files left"
+      }
+    }
+  ],
+  "file_sent_activity": [
+    {
+      "declarations": [
+        "input actorName",
+        "input actorGender",
+        "input count",
+        "local countPlural = count: plural"
+      ],
+      "selectors": [
+        "actorGender",
+        "countPlural"
+      ],
+      "match": {
+        "actorGender=*, countPlural=one": "{actorName} sent you {count} file",
+        "actorGender=*, countPlural=*": "{actorName} sent you {count} files"
+      }
+    }
+  ],
+  "files_selected": "Files selected: {count}",
+  "invites_sent": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural"
+      ],
+      "selectors": [
+        "countPlural"
+      ],
+      "match": {
+        "countPlural=one": "{#b}{count} invitation{/b} sent to {#link to=|/team|}{email}{/link}",
+        "countPlural=*": "{#b}{count} invitations{/b} sent to {#link to=|/team|}{email}{/link}"
+      }
+    }
+  ],
+  "upload_rank": [
+    {
+      "declarations": [
+        "input place",
+        "local placeOrdinal = place: plural type=ordinal"
+      ],
+      "selectors": [
+        "placeOrdinal"
+      ],
+      "match": {
+        "placeOrdinal=one": "You are the {place}st biggest uploader this week",
+        "placeOrdinal=two": "You are the {place}nd biggest uploader this week",
+        "placeOrdinal=few": "You are the {place}rd biggest uploader this week",
+        "placeOrdinal=*": "You are the {place}th biggest uploader this week"
+      }
+    }
+  ],
+  "legacy_banner": "Welcome to the old Acme Files",
+  "save": "Save",
+  "cancel": "Cancel"
+}

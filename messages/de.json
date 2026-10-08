@@ -1,0 +1,48 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "nav_settings": "Einstellungen",
+  "nav_files": "Dateien",
+  "storage_used": "{used} belegt",
+  "api_hint": "Erstelle einen API-Schlüssel, um andere Apps zu verbinden. Mehr dazu in der Dokumentation.",
+  "welcome_back": "{#b}{name}{/b}, willkommen zurück!",
+  "files_remaining": [
+    {
+      "declarations": [
+        "input count",
+        "local countPlural = count: plural"
+      ],
+      "selectors": [
+        "countPlural"
+      ],
+      "match": {
+        "countPlural=one": "Noch {count} Datei",
+        "countPlural=*": "Noch {count} Dateien"
+      }
+    }
+  ],
+  "file_sent_activity": [
+    {
+      "declarations": [
+        "input actorName",
+        "input actorGender",
+        "input count",
+        "local countPlural = count: plural"
+      ],
+      "selectors": [
+        "actorGender",
+        "countPlural"
+      ],
+      "match": {
+        "actorGender=female, countPlural=one": "{actorName} hat dir {count} Datei gesendet",
+        "actorGender=female, countPlural=*": "{actorName} hat dir {count} Dateien gesendet",
+        "actorGender=*, countPlural=one": "{actorName} hat dir {count} Datei gesendet",
+        "actorGender=*, countPlural=*": "{actorName} hat dir {count} Dateien gesendet"
+      }
+    }
+  ],
+  "files_selected": "Ausgewählte Dateien: {count}",
+  "upload_rank": "Du bist diese Woche auf Platz {place} der größten Uploader",
+  "legacy_banner": "Willkommen beim alten Acme Files",
+  "save": "Speichern",
+  "cancel": "Abbrechen"
+}

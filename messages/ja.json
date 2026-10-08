@@ -1,0 +1,11 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "nav_settings": "設定",
+  "nav_files": "ファイル",
+  "upload_hint": "ここにファイルをドロップするか、参照してください",
+  "storage_used": "{total} 中 {used} 使用中",
+  "welcome_back": "{#b}{name}{/b}さん、おかえりなさい！",
+  "files_selected": "{count} 件のファイルを選択中",
+  "save": "保存",
+  "cancel": "キャンセル"
+}
