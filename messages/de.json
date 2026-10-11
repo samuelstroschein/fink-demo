@@ -1,9 +1,8 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"nav_settings": "Einstellungen",
-	"nav_files": "",
 	"storage_used": "{used} belegt",
-	"api_hint": "Erstelle einen API-Schlüssel, um andere Apps zu verbinden. Mehr dazu in der {#link to=|/docs/api|}Dokumentation{/link}.",
+	"api_hint": "Erstelle einen API-Schlüssel, um andere Apps zu. Mehr dazu in der {#link to=|/docs/api|}Dokumentation{/link}.",
 	"welcome_back": "{#b}{name}{/b}, willkommen zurück!",
 	"files_remaining": [
 		{
