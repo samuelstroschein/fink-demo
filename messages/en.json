@@ -10,14 +10,17 @@
     {
       "declarations": [
         "input count",
+        "local countPluralExact = count",
         "local countPlural = count: plural"
       ],
       "selectors": [
+        "countPluralExact",
         "countPlural"
       ],
       "match": {
-        "countPlural=one": "{count} file left",
-        "countPlural=*": "{count} files left"
+        "countPluralExact=0, countPlural=*": "No files left",
+        "countPluralExact=*, countPlural=one": "{count} file left",
+        "countPluralExact=*, countPlural=*": "{count} files left"
       }
     }
   ],
